@@ -2,10 +2,38 @@
   "name": "freunde-mdb-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "build": "tsc",
+    "start": "node .",
+    "serve": "nodemon src/server/index"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.14.0",
+    "helmet": "^4.6.0",
+    "mongoose": "^6.0.9",
+    "mongoose-unique-validator": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/mongoose-unique-validator": "^1.0.5",
+    "@types/node": "^16.11.13",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "nodemon": "^2.0.15",
+    "prettierx": "^0.19.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
 }
