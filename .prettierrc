@@ -1,0 +1,10 @@
+{
+  "semi": false,
+  "trailingComma": "es5",
+  "bracketSpacing": false,
+  "spaceBeforeFunctionParen": true,
+  "breakBeforeElse": true,
+  "arrowParens": "always",
+  "breakLongMethodChains": true,
+  "offsetTernaryExpression": true
+}
