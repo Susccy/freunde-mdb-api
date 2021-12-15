@@ -8,11 +8,11 @@ import setRoutes from "./routes"
 const app = express()
 
 export const init = () => {
-  const corsOptions = {
-    origin: process.env.FRONTEND_URL,
-  }
+  // const corsOptions = {
+  //   origin: process.env.FRONTEND_URL,
+  // }
 
-  app.use(cors(corsOptions))
+  app.use(cors(/* corsOptions */))
   app.use(helmet())
   app.use(express.json())
   app.use(express.urlencoded({ limit: "10mb", extended: false }))
