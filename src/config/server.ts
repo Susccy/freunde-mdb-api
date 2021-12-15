@@ -9,7 +9,7 @@ const app = express()
 
 export const init = () => {
   const corsOptions = {
-    origin: "http://localhost:3000",
+    origin: process.env.FRONTEND_URL,
   }
 
   app.use(cors(corsOptions))
