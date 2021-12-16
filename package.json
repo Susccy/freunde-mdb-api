@@ -8,7 +8,7 @@
     "lint": "eslint .",
     "build": "tsc",
     "start": "node .",
-    "serve": "nodemon src/server/index"
+    "dev": "concurrently \"tsc -w\" \"nodemon src/server/index\""
   },
   "author": "",
   "license": "ISC",
